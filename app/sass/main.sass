@@ -2,6 +2,8 @@
 @import "fonts"
 @import "libs"
 
+
+
 ::placeholder
 	color: #666
 
@@ -34,6 +36,122 @@ body
 
 .text-center
 	text-align: center
+
+.fullscreen-bg 
+    overflow: hidden
+    position: relative
+    height: 100vh
+    width: 100%
+    padding-top: 45%
+
+ 
+.fullscreen-bg__video 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+
+.overlay 
+    background: rgba(0,0,0,0.6)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 9999
+
+ 
+.overlay
+	.main-text 
+		h1 
+		    margin-left: 10%
+		    color:#fff
+		    font-size: 30px
+		    margin-top: 17%
+		a
+			background-color: $accent
+			color: $white
+			padding: 15px
+			margin-left: 20%
+			text-decoration: none
+
+		p
+			width: 50%
+			color: $white
+			font-family: $default-font
+			margin-left: 10%
+
+.logo
+	img
+		float: left
+		width: 150px
+		padding: 20px
+		margin-left: 45px
+.menu
+	float: right
+	padding: 20px
+	color: $white
+	list-style: none
+	font-family: $font-bold
+	li
+		display: inline
+		padding-right: 50px
+	a
+		color: $white
+		&:hover
+			color: $accent
+			text-decoration: none
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: $white
+	height: 100vh
+
+video::-webkit-media-controls 
+	  display:none !important
+
+#myVideo
+		position: absolute
+		right: 0
+		bottom: 0
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+		background-size: 100% 100%
+  		background-position: center center
+  		background-size: contain
+   		object-fit: cover /*cover video background */
+   		z-index: 3
+	
+.s-about
+	background-color: $white
+	display: inline
+	.left
+		margin: 0
+		padding: 0
+		width: 50%
+		float: left
+		h1
+			margin-left: 100px
+			padding-left: 20px
+			font-size: 30px
+			border-left: 6px solid $accent
+		p
+			width: 80%
+			margin-left: 100px
+			font-size: 14px
+			padding-top: 30px
+
+	.right
+		width: 50%
+		heigh: 100vh
+		float: right
 
 
 @import "media" // Always at the end

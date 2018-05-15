@@ -15,7 +15,7 @@ var gulp          = require('gulp'),
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		
+		'app/libs/tf_numbers/tf_numbers.js',
 		'app/js/common.js', // всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
