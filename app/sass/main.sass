@@ -4,6 +4,7 @@
 
 
 
+
 ::placeholder
 	color: #666
 
@@ -37,6 +38,9 @@ body
 .text-center
 	text-align: center
 
+.title
+	text-align: center
+
 .fullscreen-bg 
     overflow: hidden
     position: relative
@@ -61,26 +65,33 @@ body
     height: 100%
     z-index: 9999
 
- 
 .overlay
-	.main-text 
+	.main-text
+		text-align: center 
 		h1 
-		    margin-left: 10%
 		    color:#fff
 		    font-size: 30px
-		    margin-top: 17%
+		    margin-top: 15%
+		    text-transform: uppercase
 		a
 			background-color: $accent
 			color: $white
 			padding: 15px
-			margin-left: 20%
 			text-decoration: none
-
 		p
 			width: 50%
 			color: $white
 			font-family: $default-font
-			margin-left: 10%
+			margin-left: 25%
+			margin-bottom: 40px
+	.adress
+		color: $white
+		position: absolute
+		font-size: 16px
+		margin-top: 130px
+		margin-left: 10%
+		i
+			color: $accent
 
 .logo
 	img
@@ -90,7 +101,7 @@ body
 		margin-left: 45px
 .menu
 	float: right
-	padding: 20px
+	padding: 30px
 	color: $white
 	list-style: none
 	font-family: $font-bold
@@ -102,6 +113,73 @@ body
 		&:hover
 			color: $accent
 			text-decoration: none
+#header
+	.sticky
+		position: fixed
+        font-size: 24px
+        line-height: 48px
+        height: 48px
+        width: 100%
+        background: #efc47D
+        text-align: left
+        padding-left: 20px
+
+.cont
+	position: relative
+	top: 200px
+
+.mouse 
+    border: 2px solid #ffffff
+    border-radius: 13px
+    bottom: 40px
+    display: block
+    height: 46px
+    left: 50%
+    margin: 0 auto 0 -26px
+    position: absolute
+    width: 26px
+
+.mouse 
+	span 
+	    animation-duration: 1s
+	    animation-fill-mode: both
+	    animation-iteration-count: infinite
+	    animation-name: scroll
+	    background: none repeat scroll 0 0 #ffffff
+	    border: 1px solid transparent
+	    border-radius: 4px
+	    display: block
+	    height: 4px
+	    margin: 6px auto
+	    width: 4px
+
+@keyframes scroll 
+	0% 
+	    opacity: 1
+	    transform: translateY(0px)
+
+	100% 
+	    opacity: 0
+	    transform: translateY(20px)
+
+
+
+.bottom-adress
+	display: flex
+	position: absolute
+	color: $white
+	margin-top: 600px
+	margin-left: 60%
+	font-size: 16px
+	.adress
+		padding-left: 20px
+	.mail
+		padding-left: 20px
+	i
+		color: $accent
+
+
+	
 
 section, header
 	position: relative
@@ -111,7 +189,7 @@ section, header
 section
 	background-color: $white
 	height: 100vh
-
+			
 video::-webkit-media-controls 
 	  display:none !important
 
@@ -129,29 +207,92 @@ video::-webkit-media-controls
    		object-fit: cover /*cover video background */
    		z-index: 3
 	
-.s-about
+.s-about, .why-us, .contact
 	background-color: $white
-	display: inline
+	display: inherit !important
 	.left
 		margin: 0
 		padding: 0
 		width: 50%
 		float: left
+		img
+			height: 100vh
+			margin-top: 0
+			padding-top: 0
 		h1
 			margin-left: 100px
 			padding-left: 20px
 			font-size: 30px
 			border-left: 6px solid $accent
+			margin-top: 50px
+
 		p
 			width: 80%
 			margin-left: 100px
 			font-size: 14px
 			padding-top: 30px
+		.block-adress
+			padding-left: 100px
+			padding-top: 100px
+			a
+				background-color: $accent
+				padding: 10px
+				color: $white
+				text-decoration: none
+		.c-adress, .c-call, .c-mail
+			font-size: 22px
+			padding-top: 20px
+			i
+				color: $accent
+
 
 	.right
 		width: 50%
-		heigh: 100vh
 		float: right
+		h1
+			margin-left: 100px
+			padding-left: 20px
+			font-size: 30px
+			border-left: 6px solid $accent
+			margin-top: 50px
+		p
+			width: 80%
+			margin-left: 100px
+			font-size: 14px
+			padding-top: 30px
+		h3
+			margin-left: 100px
+			padding-left: 20px
+			font-size: 24px
+			border-left: 6px solid $accent
+			margin-top: 10px
+		img
+			height: 100vh
+			margin-top: 0
+			padding-top: 0
+
+	.background-about-us
+		background-image: url(http://mkdm.letsbro.com/wp-content/uploads/2016/07/it-bg01-1.jpg?id=1874) !important
+		width: 100vh
+		height: 100vh
+		svg 
+			display: block
+			margin: 0 auto
+			width: 300px
+			margin-top: 200px
+
+		#megaphone
+			opacity: 1
+		.cls-1
+			fill: none
+			stroke: #39a7da
+			opacity: 0
+
+		
+	.statistics-inner
+		margin-left: 100px
+
+
 
 
 @import "media" // Always at the end
