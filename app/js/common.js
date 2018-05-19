@@ -1,11 +1,23 @@
 /*=================== one page scroll ====================================*/
 $(document).ready(function() {
 			$('#fullpage').fullpage({
+				menu: '#menu',
+				lockAnchors: false,
+				anchors : [ ' main ' , ' about ' , ' why ' , ' price ' , ' contacts ' ],
 				navigation: true,
 				navigationPosition: 'right',
+				showActiveTooltip: true,
+				slidesNavigation: false,
 				verticalCentered: true,
 				controlArrows: true,
-				slidesNavigation: true,
+
+				loopBottom: true,
+				loopTop: true,
+				loopHorizontal: true,
+				easing: 'easeOutBounce',
+				easingcss3: 'ease',
+
+				lazyLoading: true,
 			});
 		});
 
