@@ -52,7 +52,7 @@
 		    	<div class="main-text">
 			        <h1>Прибыльная контекстная реклама <br> 100% результат</h1>
 			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi beatae maxime, libero, perspiciatis doloribus aliquid amet placeat voluptas cupiditate sunt provident quisquam ab ut animi! Modi saepe vel necessitatibus unde?</p>
-			        <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Заказать</a>
+			       <a href="#form" class="pricing__action button button-white popup">Заказать</a>
 		        </div>
 		        <div class="cont">
 				      <div class="mouse">
@@ -60,18 +60,21 @@
 				      </div>
 				</div>
 		      	<div class="adress"><i class="fa fa-map-marker" aria-hidden="true"> </i> Россия, МО, г.Серпухов, ул.Советская, д.78а</div>
-				<!--<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
-				   	<form>
-				        <div style="padding:10px 20px;">
-				            <h3>Please sign in</h3>
-				            <label for="un" class="ui-hidden-accessible">Username:</label>
-				            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
-				            <label for="pw" class="ui-hidden-accessible">Password:</label>
-				            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
-				            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
-				        </div>
-				    </form>
-				</div>-->
+
+			<div class="hidden">
+				<form id="form" class="format">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="LikeTender">
+					<input type="hidden" name="admin_email" value="marketing@quokka.pro">
+					<input type="hidden" name="form_subject" value="Заявка с сайта">
+					<!-- END Hidden Required Fields -->
+					<h3 class="h3">Оформление заявки</h3>
+					<input type="text" name="Имя" placeholder="Введите имя..." /><br>
+					<input type="text" name="Телефон" placeholder="Введите телефон..." /><br>
+					<button class="button">Отправить</button>
+					<p>*помните, что звонок вас ни к чему не обязывает; ваши данные будут храниться строго конфиденциально и не будут переданы третьим лицам</p>
+				</form>
+		</div>
 		    </div>
 		    	<video id="myvideo" loop muted data-autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
 		        	<source src="video/Office-Day.mp4" type="video/mp4">
@@ -156,7 +159,8 @@
                         <li class="pricing__feature">Free hosting</li>
                         <li class="pricing__feature">40MB of storage space</li>
                     </ul>
-                    <button class="pricing__action">Заказать</button>
+                    
+                    <a href="#form" class="pricing__action button button-white popup">Заказать</a>
                 </div>
                 <div class="pricing__item">
                     <h3 class="pricing__title">Стандарт</h3>
@@ -169,7 +173,7 @@
                         <li class="pricing__feature">Social media integration</li>
                         <li class="pricing__feature">1GB of storage space</li>
                     </ul>
-                    <button class="pricing__action">Заказать</button>
+                   <a href="#form" class="pricing__action button button-white popup">Заказать</a>
                 </div>
                 <div class="pricing__item">
                     <h3 class="pricing__title">Максимум</h3>
@@ -183,7 +187,7 @@
                         <li class="pricing__feature">Anaylitcs integration</li>
                         <li class="pricing__feature">Unlimited storage space</li>
                     </ul>
-                    <button class="pricing__action">Заказать</button>
+                    <a href="#form" class="pricing__action button button-white popup">Заказать</a>
                 </div>
             </div>	
 </section>
