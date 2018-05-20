@@ -111,10 +111,31 @@ body
 	.main-text
 		text-align: center 
 		h1 
-		    color:#fff
-		    font-size: 30px
-		    margin-top: 15%
-		    text-transform: uppercase
+			color:#fff
+			font-size: 30px
+			margin-top: 15%
+			text-transform: uppercase
+			letter-spacing: 0
+		  	padding: .25em 0 .325em
+			display: block
+			text-shadow: 0 0 80px rgba(255,255,255,.5)
+
+			background: url(../img/animated_text_fill.png) repeat-y
+			-webkit-background-clip: text
+			background-clip: text
+
+			-webkit-text-fill-color: transparent
+			-webkit-animation: aitf 80s linear infinite
+
+			-webkit-transform: translate3d(0,0,0)
+			-webkit-backface-visibility: hidden
+
+			@-webkit-keyframes aitf 
+				0% 
+					background-position: 0% 50%
+				100% 
+					background-position: 100% 50%
+		
 		a
 			background-color: $accent
 			color: $white
@@ -130,6 +151,12 @@ body
 			font-family: $default-font
 			margin-left: 25%
 			margin-bottom: 40px
+
+
+
+
+		
+
 	.adress
 		color: $white
 		position: absolute
@@ -162,16 +189,6 @@ body
 	.active
 		border-left: 3px solid $accent
 		padding-left: 20px
-#header
-	.sticky
-		position: fixed
-        font-size: 24px
-        line-height: 48px
-        height: 48px
-        width: 100%
-        background: #efc47D
-        text-align: left
-        padding-left: 20px
 
 .cont
 	position: relative
@@ -253,7 +270,7 @@ video::-webkit-media-controls
 		background-size: 100% 100%
   		background-position: center center
   		background-size: contain
-   		object-fit: cover /*cover video background */
+   		object-fit: cover //cover video background 
    		z-index: 3
 	
 .s-about, .why-us, .contact
@@ -275,6 +292,10 @@ video::-webkit-media-controls
 			font-size: 30px
 			border-left: 6px solid $accent
 			margin-top: 50px
+		h3
+			border-left: 6px solid $accent
+			padding-left: 20px
+			margin-left: 100px
 
 		p
 			width: 80%
@@ -330,7 +351,7 @@ video::-webkit-media-controls
 			padding-top: 0
 
 	.background-about-us
-		background-image: url(https://cdn.dribbble.com/users/150883/screenshots/2293755/02_online-marketing.gif)  !important
+		background-image: url(https://cdn.dribbble.com/users/150883/screenshots/2293755/02_online-marketing.gif) !important
 		width: 100vh
 		height: 100vh
 		svg 
@@ -351,7 +372,10 @@ video::-webkit-media-controls
 	.statistics-inner
 		margin-left: 100px
 
-
+.mobile
+	display: none
+	i
+		color: $white
 
 
 @import "media" // Always at the end

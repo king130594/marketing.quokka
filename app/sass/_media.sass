@@ -8,11 +8,150 @@
 +media-breakpoint-down(md)
 +media-breakpoint-down(sm)
 +media-breakpoint-down(xs)
+	section
+		position: inherit
+		height: auto
+	.logo
+		img
+			padding-top: 10px
+			padding-left: 20px
+			margin: 0
+			width: 40%
+	.mobile
+		display: inherit
+		float: right
+		padding: 20px
+		font-size: 30px
+
+	.overlay
+		background-image: url(http://pre14.deviantart.net/8058/th/pre/f/2016/044/5/4/blue_flat_landscape_by_pientah-d9roe5k.png)  !important
+		.adress
+			margin-top: 50px
+			font-size: 10px
+		.main-text
+			position: relative
+			h1
+				font-size: 18px
+				margin-top: 200px
+				text-align: center
+			p
+				font-size: 12px
+				margin: 0
+				width: 100%
+				padding-left: 5px
+				padding-bottom: 10px
+				width: 95%
+			a
+				font-size: 12px
+				padding: 10px
+				padding-left: 35px
+				padding-right: 35px
+
+	.menu
+		background-color: $accent
+		width: 100%
+		z-index: 99999
+		li
+			display: flex
+			flex-direction: column
+		.active
+			display: none
+	.mouse
+		display: none
+	.bottom-adress
+		display: flex
+		flex-direction: column
+		margin-top: 50px
+		width: 100%
+		margin-left: 10px
+		font-size: 10px
+		.call
+			margin-left: 20px
+			font-size: 12px
+
+	.why-us
+		width: 100%
+		.left
+			display: flex
+			flex-direction: column
+			width: 100%
+			h1
+				font-size: 18px
+				margin-left: 10px
+			h3
+				margin-left: 10px
+				font-size: 16px
+			p
+				font-size: 12px	
+				margin-left: 10px
+			img
+				height: auto
+		.right
+			display: flex
+			flex-direction: column
+			width: 100%
+			h1
+				font-size: 26px
+				margin-left: 10px
+				position: absolute
+				margin-top: -100px
+				color: $white
+			h3
+				margin-left: 10px
+				font-size: 16px
+			p
+				font-size: 12px	
+				margin-left: 10px
+			img
+				display: none
+	.s-about
+		.left
+			width: 100%
+			display: flex
+			flex-direction: column
+			h1
+				font-size: 24px
+				margin-left: 10px
+			p
+				font-size: 12px	
+				margin-left: 10px
+
+		.right
+			width: 100%
+			display: flex
+			flex-direction: column
+			img
+				widht: 100%
+	.contact
+		.left
+			width: 100%
+			h1
+				margin-left: 10px
+				margin-top: 20px
+			.block-adress
+				padding-left: 40px
+				padding-top: 30px
+				.but
+					margin-top: 30px
+					margin-left: 50px
+					margin-bottom: 50px
+					a
+						padding: 20px
+						padding-left: 40px
+						padding-right: 40px
+		.right
+			width: 100%
+	.pricing-section__title
+		color: #e77956
+
+
+
 
 
 /*==========  Mobile First  ==========*/
 
 +media-breakpoint-up(xs)
+
 +media-breakpoint-up(sm)
 +media-breakpoint-up(md)
 +media-breakpoint-up(lg)
