@@ -14,8 +14,7 @@ $(document).ready(function() {
 				loopBottom: true,
 				loopTop: true,
 				loopHorizontal: true,
-				easing: 'easeOutBounce',
-				easingcss3: 'ease',
+				autoScrolling: true,
 
 				lazyLoading: true,
 			});
